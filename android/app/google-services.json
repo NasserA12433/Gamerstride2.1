@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703614472192",
+    "project_id": "gmstride-3f3a1",
+    "storage_bucket": "gmstride-3f3a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703614472192:android:bfd43ea36ceed4c47948e5",
+        "android_client_info": {
+          "package_name": "com.bossv2.gamerstrideflutter2_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqwceCxqq9qhLTY4879VQzGAgQ9BfgSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "2"
+}

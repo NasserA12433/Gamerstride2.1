@@ -1,13 +1,10 @@
-// ignore_for_file: unused_import
-
-import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
-
-import 'help_page.dart';
-import 'timer_page.dart';
+import 'package:gamerstrideflutter2_2/main.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  final int? timerDuration; // Define the timerDuration parameter
+
+  const HomePage({Key? key, this.timerDuration}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -15,6 +12,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int? _timerDuration;
+
+  @override
+  void initState() {
+    super.initState();
+    _timerDuration = widget.timerDuration; // Assign the timerDuration from widget to _timerDuration
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,9 +36,9 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color.fromARGB(255, 255, 255, 255), Color.fromARGB(255, 194, 194, 194)]
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color.fromARGB(255, 255, 255, 255), Color.fromARGB(255, 194, 194, 194)]
           ),
         ),
         child: Stack(
